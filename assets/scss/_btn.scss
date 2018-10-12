@@ -1,0 +1,22 @@
+.my-btn{
+  width: 240px;
+  line-height: 60px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background: $red-color;
+  user-select: none;
+  font-family: "Rubik Mono One";
+  background: $red-color;
+  &:hover,&:active{
+    background: #dc1822;
+  }
+  &_disabled{
+    background: #dbdbdb;
+    color: $light-color;
+    &:hover,&:active{
+      background: #dbdbdb;
+    }
+  }
+}

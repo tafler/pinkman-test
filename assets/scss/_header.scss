@@ -1,0 +1,29 @@
+
+.header{
+  &__top{
+    height: 50px;
+    background-color: $gold-color;
+  }
+  &-bot{
+    height: 100px;
+    background-color: $primary-color;
+    position: relative;
+    &__logo{
+      background: $primary-color;
+      position: absolute;
+      padding: 21px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      &:hover .logo-icon{
+        fill: $gold-color;
+      }
+    }
+  }
+}
+.logo-icon{
+  fill: #fff;
+}

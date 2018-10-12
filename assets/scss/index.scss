@@ -1,0 +1,42 @@
+@import './fonts';
+@import './variables';
+@import './beer-question';
+@import './btn';
+@import './header';
+@import './input';
+@import './loader';
+@import './title';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.wrapper{
+  max-width: 760px;
+  margin: 0 auto;
+  @media (max-width: 768px){
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  @media (max-width: 620px){
+    max-width: 520px;
+  }
+}
+html{
+  font-size: 14px;
+  font-family: "Rubik Mono One";
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary-color;
+}
+input:focus,
+button{
+  outline: none;
+}
+.hidden{
+  display: none;
+}
