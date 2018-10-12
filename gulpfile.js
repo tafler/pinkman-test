@@ -15,7 +15,7 @@ gulp.task('sass', function () {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./prod/css'));
 });
 
 gulp.task('sass:watch', function () {
@@ -25,7 +25,7 @@ gulp.task('sass:watch', function () {
 gulp.task('js', function () {
   gulp.src('assets/js/index.js')
     .pipe(webpackStream(webpackConfig), webpack)
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./prod/js'));
 });
 
 gulp.task('js:watch', function () {
@@ -38,7 +38,7 @@ gulp.task('webserver', function() {
       fallback: 'index.html',
       livereload: true,
       directoryListing: true,
-      open: 'http://localhost:8000/index.html'
+      open: 'http://localhost:8000/prod/index.html'
     }));
 });
 
